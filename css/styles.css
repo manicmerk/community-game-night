@@ -1,0 +1,68 @@
+/* Static Background */
+body {
+  background: url("../img/background.jpeg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Header/Nav */
+
+h1 {
+  color: black;
+  font-size: 1.5rem;
+  padding: 5px;
+  margin: 0;
+}
+
+.flexNav {
+  display: flex;
+  justify-content: space-between;
+  border-top: double;
+  border-bottom: double;
+  background-color: ivory;
+}
+
+.flexNav a {
+  padding-bottom: 0;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
+/* Content */
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  width: auto;
+  padding-top: 100px;
+}
+
+.divBackground {
+  background-color: ivory;
+  border-style: double;
+  border-radius: 10px;
+}
+
+.spacing {
+  padding: 15px;
+  margin: 15px;
+}
+
+.spacing h2 {
+  text-align: center;
+}
+
+.friends {
+  width: 100%;
+}
+
+.hunting {
+  width: 100%;
+}
