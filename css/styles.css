@@ -1,4 +1,5 @@
 /* Static Background */
+
 body {
   background: url("../img/background.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -25,7 +26,12 @@ h1 {
 }
 
 .flexNav a {
-  padding-bottom: 0;
+  text-decoration: none;
+}
+
+.flexNav a:hover {
+  color: ivory;
+  background-color: lightcoral;
 }
 
 .navbar-fixed-top {
@@ -42,6 +48,7 @@ h1 {
   flex-flow: row wrap;
   width: auto;
   padding-top: 100px;
+  justify-content: flex-start;
 }
 
 .divBackground {
@@ -59,10 +66,30 @@ h1 {
   text-align: center;
 }
 
+.spacing p {
+  margin: 15px;
+  text-align: center;
+}
+
 .friends {
   width: 100%;
 }
 
 .hunting {
   width: 100%;
+}
+
+.join {
+  width: 100%;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px;) {
+  .friends {
+    width: 50%;
+  }
+  .hunting {
+    width: 25%;
+  }
 }
