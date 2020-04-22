@@ -33,6 +33,7 @@
     <!-- Start of flex header/nav 
          Still attempting to find hamburger menu option at mobile width.
     -->
+
     <div class="flexNav navbar-fixed-top">
       <a href="https://www.google.com">
         <h1>Community Game Night</h1>
@@ -52,21 +53,22 @@
         </li>
       </ul>
     </div>
+
     <!-- End of flex header/nav -->
 
     <!-- Begin Content -->
 
     <div class="flex container">
-      <div class="divBackground spacing friends">
+      <div class="divBackground spacing friends dropShadow">
         <h2>Find Your Friends Easier</h2>
         <p>
           Do you ever have trouble searching through texts to find your buddies
           gamer tag? What about that Asmodee ID to play a game of Ticket to Ride
-          or Small World? Board in quarantine but not sure what your friends are
-          playing? We've got you covered!
+          or Small World? "Board" in quarantine but not sure what your friends
+          are playing? We've got you covered!
         </p>
       </div>
-      <div class="divBackground spacing hunting">
+      <div class="divBackground spacing hunting dropShadow">
         <h2>No More Hunting</h2>
         <p>
           Find your friends and family wherever they are, by creating
@@ -75,17 +77,221 @@
           your friends and family faster!
         </p>
       </div>
-      <div class="divBackground spacing join">
+      <div class="divBackground spacing join dropShadow">
         <h2>What are you waiting for?</h2>
         <p>
           Click the link below to get started jamming games and building your
           community right now!
         </p>
-        <button type="button" class="btn btn-danger btn-lg btn-block">
+
+        <!-- Subscribe/Login Buttons -->
+        <!-- Connect Modals to Both -->
+
+        <button
+          type="button"
+          class="btn btn-danger btn-lg btn-block"
+          data-toggle="modal"
+          data-target="#createAccount"
+        >
           Join Now!
+        </button>
+        <button
+          type="button"
+          class="btn btn btn-success btn-lg btn-block"
+          data-toggle="modal"
+          data-target="#logIn"
+        >
+          Login
         </button>
       </div>
     </div>
-    <!-- End -->
+
+    <!-- Content End -->
+
+    <!-- Sign Up Modal Start -->
+
+    <div
+      class="modal fade"
+      id="createAccount"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="createAccountTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createAccountTitle">
+              Sign Up
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="signup-form">
+              <form action="/examples/actions/confirmation.php" method="post">
+                <div class="form-group">
+                  <div class="row">
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="first_name"
+                        placeholder="First Name"
+                        required="required"
+                      />
+                    </div>
+                    <div class="col">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="last_name"
+                        placeholder="Last Name"
+                        required="required"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="email"
+                    placeholder="Email"
+                    required="required"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="input"
+                    class="form-control"
+                    name="username"
+                    placeholder="Username"
+                    required="required"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="password"
+                    placeholder="Password"
+                    required="required"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    name="confirm_password"
+                    placeholder="Confirm Password"
+                    required="required"
+                  />
+                </div>
+                <div class="form-group">
+                  <label class="checkbox-inline"
+                    ><input type="checkbox" required="required" /> I accept the
+                    <a href="#">Terms of Use</a> &amp;
+                    <a href="#">Privacy Policy</a></label
+                  >
+                </div>
+                <div class="form-group">
+                  <button
+                    type="submit"
+                    class="btn btn-success btn-lg btn-block"
+                  >
+                    Register Now
+                  </button>
+                </div>
+              </form>
+              <div class="text-center">
+                Already have an account?
+                <a href="#" data-toggle="modal" data-target="#logIn">Sign in</a>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer centers">
+            <a href="#">Bypass to test account page for demo.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign Up Modal End -->
+
+    <!-- Login Modal Start -->
+
+    <div
+      class="modal fade"
+      id="logIn"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="logInTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="logInTitle">
+              Sign In
+            </h5>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control is-valid"
+                  id="inputEmail"
+                  placeholder="Username/Email"
+                  required
+                />
+                <div class="valid-feedback">
+                  Good! Your email address looks valid.
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  class="form-control is-invalid"
+                  id="inputPassword"
+                  placeholder="Password"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Opps! You have entered an invalid password.
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-check-label"
+                  ><input type="checkbox" /> Remember me</label
+                >
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-success">Submit</button>
+          </div>
+          <div class="centers">
+            <a href="#">Bypass to test account page for demo.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal End -->
   </body>
 </html>

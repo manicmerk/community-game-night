@@ -83,6 +83,14 @@ h1 {
   width: 100%;
 }
 
+.dropShadow {
+  box-shadow: 0px 5px 10px black;
+}
+
+.centers {
+  margin: auto;
+}
+
 /* Media Queries */
 
 @media (min-width: 768px;) {
