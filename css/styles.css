@@ -93,11 +93,18 @@ h1 {
 
 /* Media Queries */
 
-@media (min-width: 768px;) {
+@media (min-width: 768px) {
   .friends {
-    width: 50%;
+    width: 60%;
   }
   .hunting {
-    width: 25%;
+    width: 35%;
+  }
+  .spacing {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .container {
+    justify-content: space-between;
   }
 }
