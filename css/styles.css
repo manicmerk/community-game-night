@@ -152,8 +152,11 @@ h1 {
   .flexNav li:hover {
     border-left: 15px solid lightcoral;
   }
-  .backgroundSpan hover {
-    background-color: lightcoral;
+  .footer p {
+    font-size: 0.8rem;
+  }
+  .footer a {
+    font-size: 0.8rem;
   }
 }
 
