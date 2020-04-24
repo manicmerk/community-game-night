@@ -34,25 +34,38 @@
          Still attempting to find hamburger menu option at mobile width.
     -->
 
-    <div class="flexNav navbar-fixed-top">
+    <!-- Attempting Bootstrap Nav Hamburger -->
+
+    <nav class="flexNav navbar-fixed-top navbar navbar-expand-md navbar-light">
       <a href="https://www.google.com">
         <h1>Community Game Night</h1>
       </a>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link active text-danger" href="#">Account</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-danger" href="#">Friends</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-danger" href="#">Games</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-danger" href="#">Support Us</a>
-        </li>
-      </ul>
-    </div>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#hamburger"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="hamburger">
+        <ul class="nav navbar-nav">
+          <li class="nav-item hamburgerNavSpacing">
+            <a class="nav-link active text-danger" href="#">Account</a>
+          </li>
+          <li class="nav-item hamburgerNavSpacing">
+            <a class="nav-link text-danger" href="#">Friends</a>
+          </li>
+          <li class="nav-item hamburgerNavSpacing">
+            <a class="nav-link text-danger" href="#">Games</a>
+          </li>
+          <li class="nav-item hamburgerNavSpacing">
+            <a class="nav-link text-danger" href="#">Support Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Got the hamburger working well enough to satisfy me for now. -->
 
     <!-- End of flex header/nav -->
 
@@ -86,23 +99,24 @@
 
         <!-- Subscribe/Login Buttons -->
         <!-- Connect Modals to Both -->
-
-        <button
-          type="button"
-          class="btn btn-danger btn-lg btn-block"
-          data-toggle="modal"
-          data-target="#createAccount"
-        >
-          Join Now!
-        </button>
-        <button
-          type="button"
-          class="btn btn btn-success btn-lg btn-block"
-          data-toggle="modal"
-          data-target="#logIn"
-        >
-          Login
-        </button>
+        <div class="buttonContainer">
+          <button
+            type="button"
+            class="btn btn-danger btn-lg buttonSpacing"
+            data-toggle="modal"
+            data-target="#createAccount"
+          >
+            Join Now!
+          </button>
+          <button
+            type="button"
+            class="btn btn btn-success btn-lg buttonSpacing"
+            data-toggle="modal"
+            data-target="#logIn"
+          >
+            Login
+          </button>
+        </div>
       </div>
     </div>
 
@@ -169,7 +183,7 @@
                 </div>
                 <div class="form-group">
                   <input
-                    type="input"
+                    type="text"
                     class="form-control"
                     name="username"
                     placeholder="Username"

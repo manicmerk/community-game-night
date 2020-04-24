@@ -13,7 +13,7 @@ body {
 h1 {
   color: black;
   font-size: 1.5rem;
-  padding: 5px;
+  padding: 6px;
   margin: 0;
 }
 
@@ -23,10 +23,15 @@ h1 {
   border-top: double;
   border-bottom: double;
   background-color: ivory;
+  padding: 0;
 }
 
 .flexNav a {
   text-decoration: none;
+}
+
+.hamburgerNavSpacing {
+  padding-left: 5px;
 }
 
 .flexNav a:hover {
@@ -39,6 +44,10 @@ h1 {
   right: 0;
   left: 0;
   z-index: 999;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
 }
 
 /* Content */
@@ -91,14 +100,19 @@ h1 {
   margin: auto;
 }
 
+.buttonSpacing {
+  width: 100%;
+  margin-top: 5px;
+}
+
 /* Media Queries */
 
 @media (min-width: 768px) {
   .friends {
-    width: 60%;
+    width: 52%;
   }
   .hunting {
-    width: 35%;
+    width: 45%;
   }
   .spacing {
     margin-left: 0;
@@ -106,5 +120,12 @@ h1 {
   }
   .container {
     justify-content: space-between;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .buttonSpacing {
+    width: 47%;
   }
 }
