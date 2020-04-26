@@ -34,10 +34,15 @@
   font-size: 1.5rem;
 }
 
-.addButton:focus {
+.addButton:hover {
   box-shadow: 0px 2px 5px black;
   border-color: lightcoral;
-  background-color: lightgray;
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(167, 71, 19, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .roundButton {
