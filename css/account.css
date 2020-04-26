@@ -1,0 +1,99 @@
+.bg-account {
+  background-color: whitesmoke;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.containerAccount {
+  border-right-style: double;
+  border-left-style: double;
+  position: relative;
+  top: 42px;
+  height: 100vh;
+}
+
+.tabSpacing {
+}
+
+.addButton {
+  display: block;
+  margin: 10px 88.5%;
+  border: 3px solid gray;
+  background-color: white;
+  color: black;
+  padding: 2px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.addButton:focus {
+  box-shadow: 0px 2px 5px black;
+  border-color: lightcoral;
+  background-color: lightgray;
+}
+
+.roundButton {
+  border-radius: 50%;
+}
+
+/* Media Queries */
+
+@media (min-width: 767px) {
+  .containerAccount {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* Potential Circle if I change my mind
+.circle {
+  border: 1px solid #aaa;
+  box-shadow: inset 1px 1px 3px #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: relative;
+  margin: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  background: #aaaaaa4f;
+}
+.circle:hover {
+  background: radial-gradient(#aaa, #fff);
+}
+.circle:active {
+  background: #6363634f;
+}
+.circle:before,
+.circle:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* PLUS */ /*
+.circle.plus:before,
+.circle.plus:after {
+  background: red;
+  box-shadow: 1px 1px 1px #ffffff9e;
+}
+.circle.plus:before {
+  width: 2px;
+  margin: 3px auto;
+}
+.circle.plus:after {
+  margin: auto 3px;
+  height: 2px;
+  box-shadow: none;
+}
+*/
