@@ -17,36 +17,64 @@
   border-left-style: double;
   position: relative;
   top: 42px;
-  height: 100vh;
-}
-
-.tabSpacing {
 }
 
 .addButton {
   display: block;
-  margin: 10px 88.5%;
+  margin: 10px 85%;
   border: 3px solid gray;
   background-color: white;
   color: black;
-  padding: 2px;
+  padding: 10px;
   font-weight: bolder;
   font-size: 1.5rem;
+  box-shadow: inset 0px 0px 7px red;
 }
 
 .addButton:hover {
   box-shadow: 0px 2px 5px black;
   border-color: lightcoral;
-  background: radial-gradient(
-    circle,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(167, 71, 19, 1) 35%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: lightgray;
 }
 
 .roundButton {
   border-radius: 50%;
+}
+
+/* Games/Friends/Communities Selectable Divs */
+
+.containerDivs {
+  width: 320px;
+  height: 320px;
+  margin: auto;
+  margin-bottom: 50px;
+  padding-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  box-shadow: 0px 3px 7px black;
+}
+
+.containerDivs img {
+  height: 275px;
+  width: 275px;
+}
+
+.containerDivs input {
+  margin-bottom: 75px;
+}
+
+/* ID's */
+/* Weird solution for having both initially hidden and flex wrapping content at this point, until someone gives me a better solution lol */
+
+#addGames {
+  padding-bottom: 50px;
+  display: none;
+}
+
+#flexGames {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Media Queries */

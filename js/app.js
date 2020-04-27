@@ -1,1 +1,11 @@
-ECHO is on.
+$(document).ready(function () {
+    $("#Games").click(function () {
+        $("#addGames").toggle("slow");
+    });
+});
+
+
+
+
+
+
