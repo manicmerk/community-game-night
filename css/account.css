@@ -31,7 +31,7 @@
   box-shadow: inset 0px 0px 7px red;
 }
 
-.addButton:hover {
+.addButton:active {
   box-shadow: 0px 2px 5px black;
   border-color: lightcoral;
   background: lightgray;
@@ -64,6 +64,48 @@
   margin-bottom: 75px;
 }
 
+.gamesIDs {
+  height: 100%;
+  text-align: center;
+}
+
+/* Searchbar */
+
+.searchBar {
+  margin-left: 14px;
+  margin-bottom: 20px;
+  width: 74%;
+}
+
+.searchBar:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px lightcoral;
+}
+
+.searchBtn {
+  width: 20%;
+  position: absolute;
+  right: 14px;
+}
+
+.searchBtn:active {
+  box-shadow: 0px 0px 10px lightcoral;
+}
+
+/* Input and Button Styling */
+
+.containerDivs button:active {
+  box-shadow: 0px 0px 10px lightcoral;
+}
+
+.profileForm {
+  outline: none;
+}
+
+.profileForm:focus {
+  box-shadow: 0px 0px 10px lightcoral;
+}
+
 /* ID's */
 /* Weird solution for having both initially hidden and flex wrapping content at this point, until someone gives me a better solution lol */
 
@@ -76,6 +118,45 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Footer */
+
+/*  
+.footerAct {
+  padding-top: 5px;
+  background-color: ivory;
+  border-top: double;
+  border-bottom: double;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative; 
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  margin-top: 30px;
+}
+
+.footerAct p {
+  padding-left: 15px;
+  margin: 0;
+}
+
+.footerAct a {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 3px;
+  margin-right: 15px;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.footerAct a:hover {
+  background-color: lightcoral;
+  color: ivory !important;
+}
+*/
 
 /* Media Queries */
 
