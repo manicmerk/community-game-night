@@ -160,6 +160,12 @@
 
 /* Media Queries */
 
+@media (min-width: 340px) and (max-width: 480px) {
+  .searchBar {
+    width: 70%;
+  }
+}
+
 @media (min-width: 767px) {
   .containerAccount {
     width: 80%;
