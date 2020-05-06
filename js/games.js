@@ -1,3 +1,5 @@
+// Start Button Show/Hide
+
 $(document).ready(function () {
     $("#Games").click(function () {
         $("#addGames").toggle("slow");
@@ -16,6 +18,8 @@ $(document).ready(function () {
     });
 });
 
+// Start Const for Game Cataloge
+
 const lordsOfWaterdeepBtn = document.getElementById('lowBtn');
 
 const smallWorldBtn = document.getElementById('swBtn');
@@ -31,6 +35,8 @@ const steamBtn = document.getElementById('steamBtn');
 const xboxBtn = document.getElementById('xboxBtn');
 
 const playstationBtn = document.getElementById('playstationBtn');
+
+// Add Games to Profile Functions
 
 lordsOfWaterdeepBtn.addEventListener('click', () => {
     let lordsOfWaterdeepID = $('#lowID').val();
